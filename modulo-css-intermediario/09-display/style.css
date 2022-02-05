@@ -1,0 +1,35 @@
+
+html{
+    font-size: 24px;
+}
+
+ul{
+    margin-bottom: 50px;
+
+}
+
+.em-bloco li{
+    background: aqua;
+    margin-bottom: 10px;
+    width: 100px;
+}
+
+.em-linha li{
+    display: inline;
+    background: aqua;
+    /* width:500px;   Nao funciona altura e largura com elementos inline */
+}
+
+.em-linha-e-bloco li{
+    display: inline-block;
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+}
+
+.esconder{
+    display: none;
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+}
