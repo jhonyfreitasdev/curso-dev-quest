@@ -1,0 +1,30 @@
+/* seletor::pseudoelemeto{
+    prorpiedade: valor
+} */
+
+
+.first-letter::first-letter{
+    color: coral;
+    font-size: 64px;
+}
+
+.first-line::first-line{
+    color: coral;
+}
+
+li::marker{
+    color: red;
+    font-size: 25px;
+}
+
+.antes::before{
+    content: url(favicon.ico);
+}
+
+.depois::after{
+    content: "";
+    background: url(favicon.ico) center center no-repeat;
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+}

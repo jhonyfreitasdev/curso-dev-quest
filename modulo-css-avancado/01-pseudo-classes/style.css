@@ -1,0 +1,34 @@
+/* seletor:pseudo-classe{
+    propriedade:valor
+} */
+
+p:first-child{
+    color: aquamarine;
+}
+
+p:last-child{
+    color: blueviolet;
+}
+
+/* p:not(.padrao){
+    color: yellow;
+} */
+
+
+li:nth-child(n+2):nth-child(-n+5){               
+    background-color: lightcoral;
+}
+
+/* odd  impar
+even par
+3n pula de três em três
+(2) (5) (4)
+:nth-child(n+2):nth-child(-n+5) */
+
+li:nth-last-child(1){
+    background-color: blueviolet
+}
+
+p:only-child{
+    background-color: lightgray;
+}
