@@ -1,0 +1,14 @@
+
+.flex{
+    background-color: violet;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex h2{
+    font-size: 60px;
+
+}
