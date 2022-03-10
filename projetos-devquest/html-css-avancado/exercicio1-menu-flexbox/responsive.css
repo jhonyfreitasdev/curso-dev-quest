@@ -24,9 +24,11 @@
 
     .menu li a{
         font-size: 40px;
+        padding: 17px 40px;
     }
 
     .menu .btn{
         font-size: 18px;
+        padding: 15px 23px;
     }
 }
