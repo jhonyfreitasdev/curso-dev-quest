@@ -1,0 +1,32 @@
+@media(max-width:810px){
+    .cabecalho{
+        display: block;
+    }
+
+    .cabecalho .logo{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 75px;
+    }
+    
+    .logo .titulo{
+        font-size: 40px;
+    }
+
+    .menu{
+        display: block;
+        text-align: center;
+    }
+
+    .menu li{
+        padding: 25px 0px;
+    }
+
+    .menu li a{
+        font-size: 40px;
+    }
+
+    .menu .btn{
+        font-size: 18px;
+    }
+}
