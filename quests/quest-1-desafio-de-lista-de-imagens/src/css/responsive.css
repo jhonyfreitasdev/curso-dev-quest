@@ -1,0 +1,43 @@
+
+@media(max-width:1025px){
+    .painel{
+        flex-direction: column;
+        align-items: center;
+        height: 1820px;
+    }
+
+    .image{
+        width: 80%;
+        height: 430px;
+        margin: 0 20px;
+    }
+
+    .image-1{
+        margin-top: 45px;
+    }
+
+    .image-4{
+        margin-bottom: 45px;
+    }
+
+    .informacoes{
+        bottom: 20px;
+    }
+}
+
+@media(max-width:575px){
+    .image{
+
+        margin: 0 20px;
+        height: 430px;
+        width: 335px;
+    }
+
+    .image-1{
+        margin-top: 45px;
+    }
+
+    .image-4{
+        margin-bottom: 45px;
+    }
+}

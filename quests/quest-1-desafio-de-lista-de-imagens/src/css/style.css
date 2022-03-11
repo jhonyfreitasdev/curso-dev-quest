@@ -1,0 +1,57 @@
+
+html{
+    font-size: 62.5%;
+}
+
+.painel{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1420px;
+    height: 689px;
+    margin: 0 auto;
+}
+
+.image{
+    width: 335px;
+    height: 430px;
+    margin: 130px 10px;
+    position: relative;
+}
+
+.image-1{
+    background: url(../images/6.jpg) center center;
+    background-size: cover;
+}
+
+.image-2{
+    background: url(../images/3.jpg) center center;
+    background-size: cover;
+}
+
+.image-3{
+    background: url(../images/4.jpg) center center;
+    background-size: cover;
+}
+
+.image-4{
+    background: url(../images/5.jpg) center center;
+    background-size: cover;
+}
+
+.informacoes{
+    position: absolute;
+    left: 20px;
+    bottom: 40px;
+}
+
+.painel .informacoes h2{
+    font-size: 3rem;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+
+.painel .informacoes p{
+    font-size: 1.7rem;
+    color: #FFFFFF;
+}
