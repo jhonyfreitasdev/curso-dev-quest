@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+p{
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+main{
+    background-color:#F7F7F7;
+    width: 676px;
+    height: 377px;
+    margin: 20px auto 0 auto;
+    display: grid;
+    grid-template: 96px 280px / 1fr 1fr;
+    grid-template-areas: 
+    "destaque propaganda"
+    "destaque recomendado";
+}
+
+
+.destaque{
+    grid-area: destaque;
+    margin: 30px 10px 34px 30px;
+}
+
+.destaque .video-destaque{
+    background-color: #C4C4C4;
+    width: 326px;
+    height: 202px;
+}
+
+.destaque .informacoes{
+    width: 326px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.destaque .informacoes p{
+    margin-top: 10px;
+}
+
+.propaganda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: propaganda;
+    background-color: #C4C4C4;
+    width: 270px;
+    height: 56px;
+    margin: 30px 30px 10px 10px;
+}
+
+.recomendados{
+    margin: 0 30px 26px 0;
+    width: 270px;
+    height: 248px;
+    margin: 10px 30px 25px 10px;
+}
+
+.secao-recomendado{
+    display: flex;
+}
+
+.secao-recomendado:nth-child(2){
+    margin: 16px 0 16px 0;
+}
+
+.secao-recomendado .video{
+    width: 100px;
+    height: 70px;
+    background-color: #C4C4C4;
+    margin-right: 4px;
+}
+
+.secao-recomendado .informacoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
