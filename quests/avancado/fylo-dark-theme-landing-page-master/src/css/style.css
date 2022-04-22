@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+
+
+.cabecalho{
+    background-color: hsl(219, 30%, 18%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    height: 200px;
+}
+
+.cabecalho .logo{
+    padding: 30px 45px;
+}
+
+.cabecalho .menu{
+    display: flex;
+    padding: 30px 45px;
+}
+
+.cabecalho .menu li{
+    font-size: 18px;
+    margin: 0 30px;
+}
+
+.cabecalho .menu li a{
+    color: white;
+}
+
+
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: hsl(219, 30%, 18%);
+    color: white;
+    min-height: 1090px;
+    z-index: -2;
+}
+
+.principal h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    width: 60%;
+    margin: 40px;
+}
+
+.principal p{
+    font-size: 18px;
+    width: 38%;
+    text-align: center;
+    margin:20px 0 25px 0;
+}
+
+.principal a{
+    color: white;
+    background-color:  hsl(176, 68%, 64%);
+    margin: 40px;
+    padding: 20px; 
+    width: 200px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.principal::after{
+    content: "";
+    background-image: url(../images/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+
+.vantagens{
+    background-color: hsl(218, 28%, 13%);
+    display: grid;
+}
+
+.vantagens .vantagem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    width: 430px;
+    height: 250px;
+    padding: 10px;
+}
+
+.vantagens .vantagem h3{
+    font-weight: 700;
+    font-size: 20px;
+}
