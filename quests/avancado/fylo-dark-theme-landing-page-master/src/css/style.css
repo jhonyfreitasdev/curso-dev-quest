@@ -46,8 +46,12 @@ body{
     position: relative;
     background-color: hsl(219, 30%, 18%);
     color: white;
-    min-height: 1090px;
+    min-height: 1000px;
     z-index: -2;
+}
+
+.principal img{
+    width: 60%;
 }
 
 .principal h1{
@@ -92,6 +96,11 @@ body{
 .vantagens{
     background-color: hsl(218, 28%, 13%);
     display: grid;
+    grid-template: repeat(2, 250px) / repeat(2, minmax(330px, 430px));
+    align-content: center;
+    justify-content: center;
+    grid-gap: 50px 100px;
+    min-height: 800px;
 }
 
 .vantagens .vantagem{
@@ -102,7 +111,7 @@ body{
     color: white;
     font-size: 17px;
     text-align: center;
-    width: 430px;
+    max-width: 430px;
     height: 250px;
     padding: 10px;
 }
@@ -110,4 +119,103 @@ body{
 .vantagens .vantagem h3{
     font-weight: 700;
     font-size: 20px;
+}
+
+
+
+.produtividade{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(218, 28%, 13%);
+    min-height: 550px;
+}
+
+.produtividade img{
+    width: 40%;
+    margin: 25px;
+}
+
+.produtividade .conteudo{
+    width: 34%;
+    margin: 25px;
+    color:white;
+}
+
+.produtividade .conteudo h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.produtividade .conteudo p{
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+.produtividade .conteudo a{
+    color: hsl(176, 68%, 64%);
+    border-bottom: 2px solid;
+    padding-bottom: 1px;
+    position: relative;
+}
+
+.produtividade .conteudo a::after{
+    content: "";
+    background: url(../images/icon-arrow.svg) center no-repeat;
+    position: absolute;
+    width: 30px;
+    height: 100%;
+}
+
+
+
+.comentarios{
+    background-color: hsl(218, 28%, 13%);
+    display: flex;
+    justify-content: center;
+    min-height: 600px;
+}
+
+.comentarios .comentario{
+    background-color: hsl(217, 28%, 15%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 343px;
+    height: 210px;
+    margin: 100px 17px 0 17px;
+}
+
+.comentarios .comentario p{
+    padding: 20px 20px 0 20px; 
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.comentarios .comentario .autor{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.comentario .autor img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.comentario .autor .info h4{
+    margin-left: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.comentario .autor .info p{
+    padding: 0;
+    margin: 0 0 0 10px;
+    font-size: 12px;
 }
