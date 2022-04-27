@@ -5,7 +5,6 @@ body{
     max-width: 1440px;
     margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
-    
 }
 
 
@@ -39,6 +38,10 @@ body{
 
 
 
+main{
+    position: relative;
+}
+
 .principal{
     display: flex;
     flex-direction: column;
@@ -71,6 +74,9 @@ body{
 }
 
 .principal a{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
     color: white;
     background-color:  hsl(176, 68%, 64%);
     margin: 40px;
@@ -179,7 +185,7 @@ body{
 }
 
 .comentarios .comentario{
-    background-color: hsl(217, 28%, 15%);
+    background-color: hsl(219, 30%, 18%);
     color: white;
     display: flex;
     flex-direction: column;
@@ -187,6 +193,8 @@ body{
     width: 343px;
     height: 210px;
     margin: 100px 17px 0 17px;
+    border-radius: 3px;
+    box-shadow: 6px 9px 15px rgba(255, 255, 255, 0.015);
 }
 
 .comentarios .comentario p{
@@ -202,8 +210,8 @@ body{
 }
 
 .comentario .autor img{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 50px;
 }
 
@@ -211,11 +219,69 @@ body{
     margin-left: 10px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .comentario .autor .info p{
     padding: 0;
     margin: 0 0 0 10px;
-    font-size: 12px;
+    font-size: 10px;
+}
+
+
+
+.cadastro{
+    position: absolute;
+    left: 50%;
+    bottom: -100px;
+    transform: translateX(-50%);
+    background-color: hsl(217, 28%, 15%);
+    color: white;
+    width: 800px;
+    height: 190px;
+    padding: 40px;
+    border-radius: 4px;
+    box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.158);
+}
+
+.cadastro .titulo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cadastro .info{
+    font-size: 15px;
+    text-align: center;
+    margin: 0 auto 40px auto;
+}
+
+.cadastro .formulario{
+    display: flex;
+    justify-content: center;
+}
+
+.cadastro .formulario input{
+    width: 60%;
+    margin-right: 35px;
+    border-radius: 30px;
+}
+
+.cadastro .formulario a{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    background-color:  hsl(176, 68%, 64%);
+    width: 23%;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+
+
+.rodape{
+    background-color: hsl(216, 53%, 9%);
 }
