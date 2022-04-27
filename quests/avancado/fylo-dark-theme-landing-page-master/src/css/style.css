@@ -242,6 +242,7 @@ main{
     padding: 40px;
     border-radius: 4px;
     box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.158);
+    z-index: 1;
 }
 
 .cadastro .titulo {
@@ -283,5 +284,53 @@ main{
 
 
 .rodape{
+    position: relative;
     background-color: hsl(216, 53%, 9%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 160px 65px;
+}
+
+.rodape .informacoes{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.rodape .informacoes p{
+    width: 322px;
+    margin-left: 40px;
+}
+
+.rodape .informacoes .contato span{
+    display: block;
+    margin-bottom: 12px;
+}
+
+.rodape .informacoes .sobre li,
+.rodape .informacoes .termos li{
+    margin-bottom: 12px;
+}
+
+.rodape .informacoes .sobre li a,
+.rodape .informacoes .termos li a{
+    color: white;
+}
+
+.rodape .atribuicao{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.rodape .atribuicao span{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.rodape .atribuicao span a{
+    color: white;
+    text-decoration: underline;
 }
