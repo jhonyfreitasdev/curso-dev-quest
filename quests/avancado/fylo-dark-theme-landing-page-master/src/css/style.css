@@ -36,6 +36,11 @@ body{
     color: white;
 }
 
+.cabecalho .menu li a:hover{
+    text-decoration: underline;
+    font-weight: 700;
+}
+
 
 
 main{
@@ -50,7 +55,7 @@ main{
     background-color: hsl(219, 30%, 18%);
     color: white;
     min-height: 1000px;
-    z-index: -2;
+    z-index: 1;
 }
 
 .principal img{
@@ -78,12 +83,16 @@ main{
     font-weight: 700;
     font-size: 18px;
     color: white;
-    background-color:  hsl(176, 68%, 64%);
+    background-color:  hsl(198, 60%, 50%);
     margin: 40px;
     padding: 20px; 
     width: 200px;
     text-align: center;
     border-radius: 30px;
+}
+
+.principal a:hover{
+    background-color:hsl(176, 68%, 64%);
 }
 
 .principal::after{
@@ -166,6 +175,11 @@ main{
     padding-bottom: 1px;
     position: relative;
 }
+
+.produtividade .conteudo a:hover{
+    color: white;
+}
+
 
 .produtividade .conteudo a::after{
     content: "";
@@ -262,12 +276,15 @@ main{
 .cadastro .formulario{
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .cadastro .formulario input{
     width: 60%;
     margin-right: 35px;
     border-radius: 30px;
+    padding: 10px;
+    font-size: 16px;
 }
 
 .cadastro .formulario a{
@@ -275,10 +292,28 @@ main{
     font-weight: 700;
     text-align: center;
     color: white;
-    background-color:  hsl(176, 68%, 64%);
+    background-color: hsl(198, 60%, 50%);
     width: 23%;
     padding: 15px;
     border-radius: 30px;
+}
+
+.cadastro .formulario a:hover{
+    background-color: hsl(176, 68%, 64%);
+}
+
+.cadastro .formulario a:hover p{
+    display: block;
+}
+
+.cadastro .formulario p{
+    display: none;
+    position: absolute;
+    color: hsl(0, 100%, 63%);
+    font-weight: 700;
+    bottom: -29px;
+    left: 10%;
+    font-size: 15px;
 }
 
 
@@ -289,7 +324,7 @@ main{
     color: white;
     display: flex;
     flex-direction: column;
-    padding: 160px 65px;
+    padding: 160px 115px 120px 115px;
 }
 
 .rodape .informacoes{
@@ -298,12 +333,41 @@ main{
     margin-top: 20px;
 }
 
+.rodape .informacoes p::before{
+    content: "";
+    background: url(../images/icon-location.svg) center no-repeat;
+    position: absolute;
+    left: -10px;
+    width: 50px;
+    height: 50px;
+}
+
 .rodape .informacoes p{
     width: 322px;
-    margin-left: 40px;
+    padding-left: 40px;
+    position: relative;
+}
+
+.rodape .informacoes .contato .telefone::before{
+    content: "";
+    background: url(../images/icon-phone.svg) center no-repeat;
+    position: absolute;
+    left: -35px;
+    width:30px;
+    height:22px;
+}
+
+.rodape .informacoes .contato .email::before{
+    content: "";
+    background: url(../images/icon-email.svg) center no-repeat;
+    position: absolute;
+    left: -35px;
+    width:30px;
+    height:22px;
 }
 
 .rodape .informacoes .contato span{
+    position: relative;
     display: block;
     margin-bottom: 12px;
 }
@@ -316,6 +380,22 @@ main{
 .rodape .informacoes .sobre li a,
 .rodape .informacoes .termos li a{
     color: white;
+}
+
+.rodape .informacoes .sobre li a:hover,
+.rodape .informacoes .termos li a:hover{
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.rodape .informacoes .social a{
+    color:white;
+    font-size: 25px;
+    margin-left: 18px;
+}
+
+.rodape .informacoes .social a:hover{
+    color: hsl(176, 68%, 64%);
 }
 
 .rodape .atribuicao{

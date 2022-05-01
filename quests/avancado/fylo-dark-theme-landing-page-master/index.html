@@ -4,9 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon-32x32.png">
+
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
+
+  <script src="https://kit.fontawesome.com/e147e2a7e4.js" crossorigin="anonymous"></script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon-32x32.png">
 
   <link rel="stylesheet" href="src/css/reset.css">
   <link rel="stylesheet" href="src/css/style.css">
@@ -30,15 +33,12 @@
 
   <main>
     <section class="principal">
-      <img src="src/images/illustration-intro.png" alt="">
+      <img src="src/images/illustration-intro.png" alt="Ilustração">
 
       <h1>All your files in one secure location, accessible anywhere.</h1>
-      <p>
-        Fylo stores all your most important files in one secure location. Access them wherever
-        you need, share and collaborate with friends family, and co-workers.
-      </p>
-
-      <a href="">Get Started</a>
+      <p>Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.</p>
+      
+      <a href="#get-starter">Get starter</a>
     </section>
 
     <section class="vantagens">
@@ -92,7 +92,7 @@
           Securely share files and folders with friends, family and colleagues for live collaboration. No email
           attachments required.
         </p>
-        <a href="">See how Fylo works</a>
+        <a href="#see-how-fylo-works">See how Fylo works</a>
       </div>
     </section>
 
@@ -149,15 +149,18 @@
         It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
         questions, our support team would be happy to help you.
       </p>
-      
-      <form class="formulario" method="post" action="index.html" >
-        <input type="text">
-        <a href="#get-started">Get Started For Free</a>
+
+      <form class="formulario" method="post" action="index.html">
+        <input type="text" name="email" id="email" placeholder="email@example.com">
+        <a href="#get-started">
+          Get Started For Free
+          <p>Please enter a valid email address</p>
+        </a>
+        
       </form>
     </section>
   </main>
 
-  
   <footer class="rodape">
     <div class="logo">
       <a href="index.html">
@@ -190,12 +193,15 @@
       </ul>
 
       <address class="social">
-      
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
       </address>
     </div>
 
     <p class="atribuicao">
-      <span>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</span>
+      <span>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
+          Mentor</a>.</span>
       <span>Coded by <a href="https://www.linkedin.com/in/jhony-freitas/" target="_blank">Jhony Freitas</a>.</span>
     </p>
   </footer>
