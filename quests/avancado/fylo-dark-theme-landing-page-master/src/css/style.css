@@ -197,6 +197,8 @@ main{
     display: flex;
     justify-content: center;
     min-height: 600px;
+    position: relative;
+    z-index: 1;
 }
 
 .comentarios .comentario{
@@ -210,6 +212,21 @@ main{
     margin: 100px 17px 0 17px;
     border-radius: 3px;
     box-shadow: 6px 9px 15px rgba(255, 255, 255, 0.015);
+}
+
+.comentarios .comentario.quotes{
+    position: relative;
+} 
+
+.comentarios .comentario.quotes::before{
+    content: "";
+    background: url(../images/bg-quotes.png) no-repeat center;
+    position: absolute;
+    top: -35px;
+    left: -12px;
+    width: 60px;
+    height: 50px;
+    z-index: -1;
 }
 
 .comentarios .comentario p{
