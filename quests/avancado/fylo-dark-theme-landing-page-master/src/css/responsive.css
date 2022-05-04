@@ -207,7 +207,7 @@
 
     .principal a{
         padding: 10px;
-        font: 16px;
+        font-size: 16px;
     }
 
     .comentarios .comentario{
@@ -277,6 +277,7 @@
         font-size: 14px;
         width: 80%;
     }
+    
 
     .vantagens .vantagem{
         justify-content: center;
