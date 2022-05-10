@@ -75,6 +75,7 @@
     .produtividade{
         flex-direction: column;
         align-items: center;
+        padding-bottom: 70px;
     }
     .produtividade img{
         margin: 100px 25px 30px 25px;
@@ -193,6 +194,7 @@
     }
 
     .cadastro{
+        min-height: 300px;
         max-width: 370px;
     }
 
@@ -235,7 +237,6 @@
     .cadastro{
         max-width: 320px;
         border-radius: 8px;
-        height: 280px;
         bottom: -190px;
     }
     .cadastro .titulo{
@@ -316,7 +317,7 @@
     .produtividade .conteudo a{
         font-size: 15px;
         margin: 20px 0 100px 0;  
-        width: 158px;
+        min-width: 158px;
     }
 
     .comentarios .comentario{
@@ -331,7 +332,6 @@
     }
 
     .cadastro{
-        height: 265px;
         width: 275px;
         padding: 20px;
     }
