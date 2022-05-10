@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 body{
-    min-width: 375px;
     max-width: 1440px;
     margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
@@ -219,13 +218,10 @@ main{
 } 
 
 .comentarios .comentario.quotes::before{
-    content: "";
-    background: url(../images/bg-quotes.png) no-repeat center;
+    content: url(../images/bg-quotes.png);
     position: absolute;
     top: -35px;
     left: -12px;
-    width: 60px;
-    height: 50px;
     z-index: -1;
 }
 
@@ -343,6 +339,10 @@ main{
     display: flex;
     flex-direction: column;
     padding: 160px 115px 120px 115px;
+}
+
+.rodape .logo{
+    margin-bottom: 30px;
 }
 
 .rodape .informacoes{
