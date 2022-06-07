@@ -21,6 +21,7 @@ setaAvancar.addEventListener('click', function(){
     fundoAnterior = fundoAtual
     fundoAtual ++;
     listaDeFundos[fundoAtual].classList.add("mostrar-fundo");    
+    
     esconderFundo();
 
     desabilitarSeta();
